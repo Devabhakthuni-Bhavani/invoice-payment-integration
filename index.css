@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300vh;
+    z-index: -1;
+}
+
+.background-clip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 57px;
+    font-family: Arial;
+    padding-left: 100px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 70px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+.search {
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin-left: 48px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 50px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content h2 {
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    padding-left: 70px;
+    margin-top: 1%;
+    letter-spacing: 2px;
+}
+
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 350px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background-color: #fff;
+}
+
+.content span {
+    color: #ff7200;
+    font-size: 65px
+}
+
+.form {
+    width: 250px;
+    height: 380px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: -20px;
+    left: 1030px;
+    transform: translate(0%, -5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial;
+}.btnn {
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: #ff7200;
+
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #ff7200;
+}
+
+.liw {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons ion-icon {
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: #ff7200;
+}
+
+.typing-text {
+    display: inline-block;
+    font-size: 20px;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the text remains in one line */
+    white-space: nowrap;
+    /* Prevents wrapping */
+    border-right: 0.15em solid #ff7200;
+    /* Simulates cursor */
+    animation: typing 5s steps(18) infinite, blink-caret .5s step-end infinite alternate;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #ff7200;
+    }
+}
+
+.typing-text .highlighted-text {
+    color: #ff7200;
+    font-size: 45px;
+    /* Adjusted font size */
+}
+
+.cont {
+    margin-left: 57px;
+    font-size: 28px;
+    margin-top: 25px;
+
+}
+
+/* New styles for the second page */
+.second-page {
+    position: relative;
+    height: 100vh;
+    /* Ensure it covers the entire viewport height */
+    display: flex;
+    justify-content: flex-end;
+    /* Align content to the right */
+    align-items: flex-start;
+    /* Align content to the top */
+    padding: 20px;
+    /* Add some padding */
+    color: #fff;
+}
+
+.second-page .scrollable-content {
+    width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Ensure it's semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.sp1 h2 {
+    right: 100px;
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.sp1 p {
+    position: absolute;
+    top: 60px;
+    /* Adjust the top position of p relative to h2 */
+    left: 800px;
+    /* Adjust the left position of p */
+    color: #fff;
+    /* Example text color */
+    font-size: 25px;
+    /* Example font size */
+}
+
+.sp2 h1 {
+    position: relative;
+    top: 320px;
+    /* Adjust the top position of h1 */
+    color: #fff;
+    font-size: 30px;
+    left: -1030px;
+}
+
+.sp2 p {
+    position: absolute;
+    top: 390px;
+    /* Adjust the top position of p relative to h2 */
+    left: 120px;
+    /* Adjust the left position of p */
+    color: #fff;
+    /* Example text color */
+    font-size: 25px;
+    /* Example font size */
+
+
+}
+
+
+.video-container {
+    position: absolute;
+    top: 300px;
+    left: 900px;
+}
+
+.video {
+    width: 100%;
+    max-width: 485px;
+    /* Adjust this value to make the video smaller */
+    height: auto;
+    border-radius: 40px;
+    border-style: groove;
+}
+
+/* Additional styles for headings and paragraphs */
+.sp1 h2,
+.sp2 h1 {
+    margin-bottom: 20px;
+}
+
+.sp1 p,
+.sp2 p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+
+/* New styles for the third page */
+.third-page {
+    position: relative;
+    height: 100vh;
+    /* Ensure it covers the entire viewport height */
+    display: flex;
+    justify-content: flex-end;
+    /* Align content to the right */
+    align-items: flex-start;
+    /* Align content to the top */
+    padding: 20px;
+    /* Add some padding */
+    color: #fff;
+}
+
+.third-page .scrollable-content {
+    width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Ensure it's semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+
+}.tp1 h2 {
+    position: relative;
+    right: -55px;
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.tp1 p {
+    position: absolute;
+    top: 60px;
+    /* Adjust the top position of p relative to h2 */
+    left: 800px;
+    /* Adjust the left position of p */
+    color: #fff;
+    /* Example text color */
+    font-size: 25px;
+    /* Example font size */
+}
+
+.tp2 h1 {
+    position: relative;
+    top: 320px;
+    /* Adjust the top position of h1 */
+    color: #fff;
+    font-size: 30px;
+    left: -864px;
+
+}
+
+.tp2 p {
+    position: absolute;
+    top: 390px;
+    /* Adjust the top position of p relative to h2 */
+    left: 120px;
+    /* Adjust the left position of p */
+    color: #fff;
+    /* Example text color */
+    font-size: 25px;
+    /* Example font size */
+
+
+}
+
+/* Additional styles for headings and paragraphs */
+.tp1 h2,
+.tp2 h1 {
+    margin-bottom: 20px;
+}
+
+.tp1 p,
+.tp2 p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        margin: 0;
+        /* Remove default margin */
+        padding: 0;
+        /* Remove default padding */
+        overflow-x: hidden;
+        /* Prevent horizontal scroll */
+        font-family: Arial, sans-serif;
+        /* Use Arial as fallback font */
+        background-size: cover;
+        /* Cover the entire screen */
+        background-position: center;
+        /* Center the background image */
+    }
+
+    .form {
+        width: 400px;
+        height: 340px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background: black;
+        padding: 40px 25px;
+    }
+
+    #signUpButton {
+        margin-left: 155px;
+        font-size: medium;
+    }
+
+    h2 {
+        margin-left: 155px;
+    }
+
+    input {
+        width: 60%;
+        padding: 12px 20px;
+        margin: 8px 60px;
+        display: inline-block;
+        border: 1px solid #e3d1d1;
+        border-radius: 4px;
+    }
+
+    
+
+    .form .cn {
+        width: 160px;
+        height: 40px;
+        background: #ff7200;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 120px;
+        margin-top: -3px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+
+    }
+
+    .form .cn a {
+        text-decoration: none;
+        color: #000;
+        transition: .3s ease;
+    }
+
+    .image-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 2px;
+        width: 225px;
+        /* Set the desired width */
+        height: auto;
+        margin: 20px;
+        bottom: 10px;
+        /* Add margin to keep it away from edges */
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 300px;
+        left: 10px;
+        /* Optional: Adds rounded corners to the image */
+    }
+</style>
+
+<body>
+   
+        <div class="form">
+        
+
+        <h2>Sign Up</h2>
+        <input type="Username" name="Username" placeholder="Enter Username">
+        <input type="email" name="email" placeholder="Enter Email address">
+        <input type="password" name="" placeholder="Enter password ">
+        <p class="link">
+        </p>
+        <button class="cn"><a href="#">Continue</a></button>
+    </div>
+</body>
+
+</html>

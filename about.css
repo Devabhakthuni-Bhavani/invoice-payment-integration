@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-shadow: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 160%;
+    background-color: #000;
+}
+
+.title h1 {
+    text-align: center;
+    margin-left: -590px;
+    padding-top: 80px;
+    font-size: 42px;
+    color: #efefef;
+}
+
+.title h1::after {
+    content: "";
+    height: 6px;
+    width: 230px;
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+
+.services {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+    text-align: center;
+
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: rgb(246, 246, 153);
+    transition: 0.4s ease;
+}
+
+.card .icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 28px;
+    color: midnightblue;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #292929;
+}
+
+@media screen and (max-width: 1150px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 65px;
+    width: 225px;
+    /* Set the desired width */
+    height: auto;
+    margin: 20px;
+    bottom: 10px;
+    /* Add margin to keep it away from edges */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    left: 10px;
+    /* Optional: Adds rounded corners to the image */
+}
